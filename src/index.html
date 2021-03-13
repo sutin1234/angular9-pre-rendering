@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>GotPrerenderDemo</title>
+  <title>Angular 9 pre rendering demo</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -11,7 +11,7 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <script>
-    // Log the value of FCP to the console | https://web.dev/fcp/#measure-fcp-in-javascript 
+    // Log the value of FCP to the console | https://web.dev/fcp/#measure-fcp-in-javascript
     const observer = new PerformanceObserver((list) => {
       for (const entry of list.getEntriesByName('first-contentful-paint')) {
         console.log('FCP: ', entry.startTime);
@@ -19,7 +19,7 @@
       }
     })
 
-    observer.observe({type: 'paint', buffered: true});
+    observer.observe({ type: 'paint', buffered: true });
   </script>
 
 
